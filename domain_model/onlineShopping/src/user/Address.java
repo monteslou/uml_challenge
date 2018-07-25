@@ -18,6 +18,10 @@ public class Address {
     }
 
     public String getAddress() {
+
         return (lineOne + " " + lineTwo + " " + city + " (" + country + ") ");
     }
+
+
 }
+

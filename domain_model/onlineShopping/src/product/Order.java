@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 public class Order {
+
     private int id;
     private Date modified;
     private OrderStatus status;
@@ -70,24 +71,34 @@ public class Order {
 
     @Override
     public String toString() {
-        return "product.Order{" +
-                "id=" + id +
-                ", modified=" + modified +
-                ", status=" + status +
-                ", shippingAddress='" + shippingAddress + '\'' +
-                ", total=" + total +
-                ", items=" + items +
-                '}';
+        if (items == null) {
+            return "Product Order ~ " +
+                    "id: " + id +
+                    ", modified: " + modified +
+                    ", status: " + status +
+                    ", shippingAddress: '" + shippingAddress + '\'' +
+                    ", total: $" + total + " US"+
+                    ", items: Empty";
+        } else {
+            return "Product Order ~ \n" +
+                    "id: " + id +
+                    ", modified: " + modified + "\n" +
+                    "status: " + status +
+                    ", shipping address: " + shippingAddress + "\n" +
+                    "Total: $" + total + " US" + "\n" +
+                    "items: " + items.toString();
+        }
     }
 
     public void addItem(LineItem i) {
         items.add(i);
     }
 
-    public void setTotal() {
+    public double setTotal() {
         double total = 0;
-        for (int i = 0; i <= items.size(); i++) {
-            total += items.get(i).getPrice() * items.get(i).getQuantity();
+        for (int i = 0; i < items.size(); i++) {
+            total = total + (items.get(i).getPrice() * items.get(i).getQuantity());
         }
+        return total;
     }
 }

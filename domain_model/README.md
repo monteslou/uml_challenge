@@ -9,3 +9,6 @@
 	- paymentMethods
 	- product
 	- user
+- SKU can contain letters : String
+- number in PaymentMethod need to be a String. With the number we don't do any math operation
+- contact

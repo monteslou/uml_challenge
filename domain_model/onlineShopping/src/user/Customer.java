@@ -1,19 +1,13 @@
 package user;
 
+import java.util.Collections;
+
 public class Customer {
     private int id;
     private String name;
     private int contact;
     private String userName;
     private String password;
-
-    public Customer() {
-        this.id = 0;
-        this.name = "";
-        this.contact = 0;
-        this.userName = "";
-        this.password = "";
-    }
 
     public Customer(int id, String name, int contact, String userName, String password) {
         this.id = id;
@@ -63,14 +57,17 @@ public class Customer {
         this.password = password;
     }
 
+
     @Override
     public String toString() {
-        return "user.Customer{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", contact=" + contact +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        int lengthPassword = this.password.length();
+        String str = "*";
+
+        return  "Customer~ " + "id: " + id +
+                ", Name: " + name +
+                ", Contact: " + contact +
+                ", User name: " + userName +
+                ", Password: " + String.join("", Collections.nCopies(lengthPassword, str));
     }
 }
+

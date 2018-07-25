@@ -1,5 +1,6 @@
 package paymentMethods;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DebitCard implements PaymentMethod {
@@ -11,6 +12,15 @@ public class DebitCard implements PaymentMethod {
         this.number = number;
         this.expDate = expDate;
         this.issuer = issuer;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat dt = new SimpleDateFormat("mm/YYYY");
+        return "DebitCard~ " +
+                "number card: " + ("**** **** **** " +   (int ) number% 10000) +
+                ", exp date: " + dt.format(expDate) +
+                ", issuer: " + issuer;
     }
 
     @Override
