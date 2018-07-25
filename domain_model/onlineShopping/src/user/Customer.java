@@ -1,3 +1,5 @@
+package user;
+
 public class Customer {
     private int id;
     private String name;
@@ -63,7 +65,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "user.Customer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", contact=" + contact +

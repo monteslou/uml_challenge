@@ -1,6 +1,8 @@
+package paymentMethods;
+
 import java.util.Date;
 
-public class CreditCard extends PaymentMethod{
+public class CreditCard implements PaymentMethod {
 
     private double number;
     private Date expDate;
@@ -16,6 +18,6 @@ public class CreditCard extends PaymentMethod{
 
     @Override
     public void authorize() {
-        System.out.println("Inside CreditCard::authorize() method");
+        System.out.println("Inside paymentMethods.CreditCard::authorize() method");
     }
 }

@@ -1,6 +1,8 @@
+package paymentMethods;
+
 import java.util.Date;
 
-public class DebitCard extends PaymentMethod{
+public class DebitCard implements PaymentMethod {
     private double number;
     private Date expDate;
     private Issuer issuer;

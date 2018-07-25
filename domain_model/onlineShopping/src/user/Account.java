@@ -1,3 +1,8 @@
+package user;
+
+import paymentMethods.PaymentMethod;
+import product.ShoppingCart;
+
 import java.util.List;
 
 public class Account {

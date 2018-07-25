@@ -4,7 +4,7 @@
 
 ## CONTEXT
 
-To practice UML and Java Fundamentals knowledge a challange was given. This challenge splits in 3 exercises as follows:
+To practice UML and Java Fundamentals knowledge a challenge was given. This challenge splits in 3 exercises as follows:
 
 1. Given the following class diagram, implement the domain-model in a new java project
 

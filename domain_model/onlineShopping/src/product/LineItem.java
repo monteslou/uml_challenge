@@ -1,3 +1,5 @@
+package product;
+
 public class LineItem {
         private Product product;
         private int quantity;
@@ -35,7 +37,7 @@ public class LineItem {
 
     @Override
     public String toString() {
-        return "LineItem{" +
+        return "product.LineItem{" +
                 "product=" + product +
                 ", quantity=" + quantity +
                 ", price=" + price +

@@ -1,3 +1,5 @@
+package product;
+
 import java.util.Date;
 import java.util.List;
 
@@ -68,7 +70,7 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "product.Order{" +
                 "id=" + id +
                 ", modified=" + modified +
                 ", status=" + status +

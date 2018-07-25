@@ -4,5 +4,8 @@
 
 ## Notes
 
-
-
+- In class paymentMethod, the variable id is not necessary, and need to be in creditCard, debitCard and Check as a private variable to identify each paymentMethod.
+- The project was divided in different folders by modules. Suggested by the mentor.
+	- paymentMethods
+	- product
+	- user
