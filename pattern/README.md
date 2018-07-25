@@ -8,9 +8,9 @@
 
 ## Notes
 
-A factory creator/generator class *FactoryProducer* can be created. Client class uses FactoryProducer to get an **AbstractFactory** object. In this case X or Y type product.
+A factory creator/generator class *FactoryProducer* can be created. Client class *uses* FactoryProducer to get an object. In this case X or Y type product.
 
-![](https://raw.githubusercontent.com/monteslou/uml_challenge/dev/pattern/Result.PNG)
+![](https://raw.githubusercontent.com/monteslou/uml_challenge/dev/pattern/FactoryProducer.PNG)
 
 We also need to create an **interface** (AbstractFactory) class for each of the components that are in the themes we wish to provide(ConcreteFactoryX and ConcreteFactoryY). We don't use **abstract** class beacause we are not using concrete methods or objects.
 
