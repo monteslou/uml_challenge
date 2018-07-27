@@ -191,6 +191,7 @@ public class Client {
     }
     private void deleteAccount(){
         System.out.println("-----Deleting account-----");
+
         account.destroyMethods();
         paymentMethod1 = null;
         paymentMethod2 = null;
@@ -202,6 +203,8 @@ public class Client {
         System.out.println(account.toString() + "\n");
 
         account = null;
+
+        System.out.println("-----Account DELETED-----");
     }
 
 
